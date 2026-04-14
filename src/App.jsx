@@ -1,4 +1,6 @@
 import './App.css'
+import TodoList from './components/TodoList'
+import TodoForm from './components/TodoForm'
 
 function App() {
 
@@ -11,11 +13,8 @@ function App() {
   return (
     <div>
     <h1>Todo List</h1>
-    <ul>
-      {todoList.map(todo => (
-        <li key={todo.id}>{todo.title}</li>
-      ))}
-    </ul>
+    <TodoList />
+    <TodoForm />
   </div>
   )
 }
